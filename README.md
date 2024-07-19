@@ -247,8 +247,90 @@ finally block: Optionally used to define clean-up actions that should be execute
 9. Modules and Packages:
    - Explain the concepts of modules and packages in Python. How can you import and use a module in your script? Provide an example using the `math` module.
 
+Modules:
+Definition: Modules in Python are files containing Python code. They can define functions, classes, and variables, and provide reusable functionality. Each Python file (ending in .py) is a module.
+Purpose: Modules help organize Python code into logical units, making it easier to maintain and reuse across different projects.
+Example: A module named my_module.py can contain functions, classes, or variables that perform specific tasks.
+
+Packages:
+Definition: Packages in Python are directories containing multiple Python modules and possibly sub-packages. They are used to organize related modules into a single hierarchical namespace.
+Purpose: Packages help avoid naming conflicts, provide structure to large projects, and enable modular application design.
+Example: The numpy package contains various modules for numerical computing, such as numpy.random, numpy.linalg, etc.
+
+Importing and Using a Module:
+To import and use a module in your Python script, you can use the import statement followed by the module name. Here's how you can import and use the math module as an example:
+     # Importing the math module
+import math
+# Using functions from the math module
+print("Value of pi:", math.pi)
+print("Square root of 16:", math.sqrt(16))
+print("Factorial of 5:", math.factorial(5))
+
+Output:
+When you run this script, it will output:
+    Value of pi: 3.141592653589793
+    Square root of 16: 4.0
+    Factorial of 5: 120
+
+
+
+
 10. File I/O:
     - How do you read from and write to files in Python? Write a script that reads the content of a file and prints it to the console, and another script that writes a list of strings to a file.
+
+To read from a file in Python, you typically follow these steps:
+
+1.Open the File: Use the open() function with the file path and mode ('r' for reading).
+2.Read from the File: Use methods like read(), readline(), or readlines() to retrieve the file's contents.
+3.Close the File: Always close the file using the close() method to free up system resources.
+Here's a script that reads the content of a file and prints it to the console:
+# Reading from a file and printing its content
+
+# Specify the file path
+file_path = 'sample.txt'
+
+# Open the file in read mode
+try:
+    with open(file_path, 'r') as file:
+        # Read and print the entire content of the file
+        file_content = file.read()
+        print("Content of the file:")
+        print(file_content)
+except FileNotFoundError:
+    print(f"Error: The file '{file_path}' does not exist.")
+except IOError:
+    print(f"Error: Unable to read from the file '{file_path}'.")
+
+To write to a file in Python, follow these steps:
+
+1.Open the File: Use the open() function with the file path and mode ('w' for writing).
+2.Write to the File: Use methods like write() to write data to the file.
+3.Close the File: Always close the file using the close() method to save changes and free up system resources.
+Here's a script that writes a list of strings to a file:
+       # Writing to a file
+
+# Specify the file path
+file_path = 'output.txt'
+
+# List of strings to write to the file
+lines_to_write = [
+    "This is line 1.",
+    "This is line 2.",
+    "This is line 3."
+]
+
+# Open the file in write mode
+try:
+    with open(file_path, 'w') as file:
+        # Write each line from the list to the file
+        for line in lines_to_write:
+            file.write(line + '\n')  # Add a newline character after each line
+    print(f"Successfully wrote {len(lines_to_write)} lines to '{file_path}'.")
+except IOError:
+    print(f"Error: Unable to write to the file '{file_path}'.")
+
+
+
 
 # Submission Guidelines:
 - Your answers should be well-structured, concise, and to the point.
