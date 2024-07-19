@@ -47,11 +47,110 @@ Using these steps, you can easily install Python on your Windows system and set 
 3. Python Syntax and Semantics:
    - Write a simple Python program that prints "Hello, World!" to the console. Explain the basic syntax elements used in the program.
 
+#Here's a simple Python program that prints "Hello, World!" to the console:
+   # Python program to print Hello, World!
+print("Hello, World!")
+
+The Python program print("Hello, World!") demonstrates key syntax elements:
+
+Comments start with # and are ignored during execution, used for notes or explanations.
+Print Statement (print() function) outputs text to the console. In this case, "Hello, World!" is a string literal enclosed in double quotes.
+Python strings can use either single or double quotes for delimitation.
+When executed, the program prints "Hello, World!" to the console, showcasing basic Python syntax for outputting text.
+
 4. Data Types and Variables:
    - List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.
 
+Python supports several fundamental data types:
+
+1.Integer (int):
+Represents whole numbers without any decimal point. Example: 5, -10, 1000.
+
+2.Float (float):
+Represents numbers with a decimal point or numbers in exponential form using e or E. Example: 3.14, 2.71828, 1.0e-5.
+
+3.String (str):
+Represents sequences of characters enclosed within single quotes (') or double quotes ("). Example: 'Hello', "Python", "123".
+
+4.Boolean (bool):
+Represents a binary value indicating true or false. Example: True, False.
+
+5.List:
+Represents an ordered collection of items which can be of different data types. Example: [1, 2, 3, 'a', 'b'].
+
+6.Tuple:
+Similar to a list, but immutable (unchangeable). Example: (1, 2, 3, 'a', 'b').
+
+7.Dictionary (dict):
+Represents a collection of key-value pairs where each key is associated with a value. Example: {'name': 'Alice', 'age': 30, 'city': 'New York'}.
+
+Here's a Python script demonstrating variables of different data types:
+# Integer variable
+num1 = 10
+
+# Float variable
+pi = 3.14
+
+# String variables
+name = "Alice"
+message = 'Hello, World!'
+
+# Boolean variable
+is_python_fun = True
+
+# List variable
+fruits = ['apple', 'banana', 'cherry']
+
+# Tuple variable
+coordinates = (10, 20)
+
+# Dictionary variable
+person = {'name': 'Bob', 'age': 25, 'city': 'London'}
+
+# Printing variables
+print("Integer:", num1)
+print("Float:", pi)
+print("String:", name)
+print("String:", message)
+print("Boolean:", is_python_fun)
+print("List:", fruits)
+print("Tuple:", coordinates)
+print("Dictionary:", person)
+
+
 5. Control Structures:
    - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
+
+Conditional Statements (if-else): Allow programs to execute different blocks of code based on whether a specified condition evaluates to True or False. This enables decision-making within the program flow.
+
+Loops (for loop): Provide a way to iterate over a sequence of elements (like lists or strings) and perform operations on each element individually. They streamline repetitive tasks and are essential for processing collections of data in Python.Conditional statements allow Python programs to make decisions based on conditions. The basic syntax for an if statement is:
+     if condition:
+    # Code block to execute if condition is True
+else:
+    # Code block to execute if condition is False
+
+Example of if-else statement:
+   # Example of an if-else statement
+x = 10
+
+if x > 0:
+    print("x is positive")
+else:
+    print("x is non-positive")
+
+Loops (for loop):
+Loops in Python allow repeated execution of a block of code. One commonly used loop is the for loop, which iterates over a sequence (such as a list or a string). The basic syntax for a for loop is:
+      for element in sequence:
+    # Code block to execute for each element in the sequence
+
+Example of a for loop:
+     # Example of a for loop
+fruits = ['apple', 'banana', 'cherry']
+
+for fruit in fruits:
+    print(fruit)
+
+
 
 6. Functions in Python:
    - What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.
