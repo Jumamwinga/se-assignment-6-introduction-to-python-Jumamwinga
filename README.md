@@ -307,7 +307,7 @@ To write to a file in Python, follow these steps:
 2.Write to the File: Use methods like write() to write data to the file.
 3.Close the File: Always close the file using the close() method to save changes and free up system resources.
 Here's a script that writes a list of strings to a file:
-       # Writing to a file
+       ## Writing to a file
 
 # Specify the file path
 file_path = 'output.txt'
